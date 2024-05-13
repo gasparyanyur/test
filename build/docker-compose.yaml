@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: bitnami/mongodb:4.4
+    environment:
+      - MONGODB_ROOT_USER=mongodb
+      - MONGODB_ROOT_PASSWORD=mongodb
+      - MONGODB_ADVERTISED_HOSTNAME=mongodb
+    volumes:
+      - dbdata:/bitnami/mongodb
+    ports:
+      - '10000:27017'
+    networks:
+      - filesystem-api
+
+networks:
+  filesystem-api:
+    driver: bridge
+
+volumes:
+  dbdata: {}

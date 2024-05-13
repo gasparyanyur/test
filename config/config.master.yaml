@@ -1,0 +1,15 @@
+SERVER:
+  PORT: 8080
+
+FILESTORAGE:
+  NODES:
+    - http://localhost:9011/api/v1
+    - http://localhost:9012/api/v1
+#    - http://localhost:9013/api/v1
+#    - http://localhost:9014/api/v1
+#    - http://localhost:9015/api/v1
+#    - http://localhost:9016/api/v1
+
+  WORKERCOUNT: 10
+
+

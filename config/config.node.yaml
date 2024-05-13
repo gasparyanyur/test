@@ -1,0 +1,9 @@
+SERVER:
+  PORT: 8080
+  SIZE: 20000000000
+
+MONGO:
+  URI: mongodb://localhost:10000/?directConnection=true&authSource=admin
+  USER: mongodb
+  PASSWORD: mongodb
+  DB: node
